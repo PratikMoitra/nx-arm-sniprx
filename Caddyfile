@@ -1,0 +1,13 @@
+0.0.0.0:8080, [::]:8080
+gzip
+header / Cache-Control "no-cache, no-store, must-revalidate"
+header / Pragma "no-cache"
+header / Expires "0"
+
+proxy / localhost:43867 {
+    except /static
+    header_upstream Host {host}
+    header_upstream X-Forwarded-For {remote}
+    header_upstream X-Real-IP {remote}
+    header_upstream X-Forwarded-Proto {scheme}
+}
