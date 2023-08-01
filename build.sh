@@ -108,11 +108,9 @@ log_action_end_msg $?
 
 # obtain the interface with the default gateway
 IFACE=$(get_iface 4)
-# IFACE="ztyqb7dua"
 # obtain IP address of the Internet facing interface
 IPADDR=$(get_ipaddr)
 # EXTIP=$(get_ext_ipaddr 4)
-EXTIP="192.168.192.3"
 
 IPV6=0
 if cat /proc/net/if_inet6 | grep -v lo | grep -v fe80 > /dev/null\
@@ -145,8 +143,6 @@ if [[ "${IPV6}" == '1' ]]; then
 fi
 
 sudo touch ${CWD}/netflix-proxy.log
-
-EXTIP="192.168.192.3"
 
 log_action_begin_msg "log diagnostics info"
 printf "build=${DOCKER_BUILD} client=${CLIENTIP} local=${IPADDR} public=${EXTIP}\n"
