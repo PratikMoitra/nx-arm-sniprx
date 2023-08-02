@@ -13,9 +13,10 @@ CWD=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
 # display usage
 usage() {
-    echo "Usage: $0 [-b 0|1] [-c <ip>]" 1>&2;\
+    echo "Usage: $0 [-b 0|1] [-c <ip>] [-e <ip>]" 1>&2;\
     printf "\t-b\tgrab docker images from repository (0) or build locally (1) (default: 0)\n";\
     printf "\t-c\tspecify client-ip instead of being taken from ssh_connection\n";\
+    printf "\t-e\tspecify External-ip instead of being taken from ifconfig.co (useful for VPN)\n";\
     exit 1;
 }
 
@@ -27,10 +28,14 @@ if [[ $(infocmp | grep 'hpa=') == "" ]]; then
     && rm tmp-$$.tic\
     && exec $0 $*
 fi
+# obtain the interface with the default gateway and Internet facing interface
+IFACE=$(get_iface 4)
+IPADDR=$(get_ipaddr)
+EXTIP=$(get_ext_ipaddr 4)
 
 # process options
 printf "$0: $*\n"
-while getopts "b:c:" o; do
+while getopts "b:c:e:" o; do
     case "${o}" in
         b)
             b=${OPTARG}
@@ -38,6 +43,9 @@ while getopts "b:c:" o; do
             ;;
         c)
             c=${OPTARG}
+            ;;        
+        e)
+            e=${OPTARG}
             ;;
         *)
             usage
@@ -48,6 +56,7 @@ shift $((OPTIND-1))
 
 if [ ${b} ]; then DOCKER_BUILD=${b}; fi
 if [ ${c} ]; then CLIENTIP=${c}; fi
+if [ ${e} ]; then EXTIP=${e}; fi
 
 log_action_begin_msg "checking OS compatibility"
 if [[ $(cat /etc/os-release | grep '^ID=') =~ ubuntu ]]\
@@ -106,11 +115,6 @@ sudo apt-get -y update &>> ${CWD}/netflix-proxy.log\
   && sudo apt-get -y install net-tools &>> ${CWD}/netflix-proxy.log
 log_action_end_msg $?
 
-# obtain the interface with the default gateway
-IFACE=$(get_iface 4)
-# obtain IP address of the Internet facing interface
-IPADDR=$(get_ipaddr)
-# EXTIP=$(get_ext_ipaddr 4)
 
 IPV6=0
 if cat /proc/net/if_inet6 | grep -v lo | grep -v fe80 > /dev/null\
