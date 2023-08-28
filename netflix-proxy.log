@@ -4597,3 +4597,825 @@ www.netflix.com.	60	IN	A	192.168.192.3
 100 64336    0 64336    0     0  27851      0 --:--:--  0:00:02 --:--:--  116k100  408k    0  408k    0     0   139k      0 --:--:--  0:00:02 --:--:--  354k
 * Connection #0 to host www.netflix.com left intact
 ~/netflix-proxy
+Hit:1 https://download.docker.com/linux/debian bullseye InRelease
+Get:2 http://security.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Hit:3 http://deb.debian.org/debian bullseye InRelease
+Get:4 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:5 http://archive.raspberrypi.org/debian bullseye InRelease [23.6 kB]
+Get:6 http://download.zerotier.com/debian/bullseye bullseye InRelease [36.9 kB]
+Get:7 http://security.debian.org/debian-security bullseye-security/main arm64 Packages [242 kB]
+Get:8 http://security.debian.org/debian-security bullseye-security/main armhf Packages [242 kB]
+Get:9 http://security.debian.org/debian-security bullseye-security/main Translation-en [158 kB]
+Get:10 http://archive.raspberrypi.org/debian bullseye/main armhf Packages [314 kB]
+Get:11 http://download.zerotier.com/debian/bullseye bullseye/main armhf Packages [4616 B]
+Get:12 http://archive.raspberrypi.org/debian bullseye/main arm64 Packages [308 kB]
+Get:13 http://download.zerotier.com/debian/bullseye bullseye/main arm64 Packages [4640 B]
+Fetched 1426 kB in 3s (545 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+net-tools is already the newest version (1.60+git20181103.0eebece-1).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+./netflixbuild.sh: build=0 client=192.168.137.0/24 is_client_ipv4=1 ipaddr=192.168.1.193 extip=192.168.192.3
+
+~/netflix-proxy ~/netflix-proxy
+
+resolver {
+  nameserver 8.8.8.8
+  nameserver 8.8.4.4
+  mode ipv4_only
+}
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_US.UTF-8",
+	LC_MONETARY = "en_US.UTF-8",
+	LC_MESSAGES = "en_US.UTF-8",
+	LC_COLLATE = "en_US.UTF-8",
+	LC_NUMERIC = "en_US.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_US.UTF-8",
+	LC_MONETARY = "en_US.UTF-8",
+	LC_MESSAGES = "en_US.UTF-8",
+	LC_COLLATE = "en_US.UTF-8",
+	LC_NUMERIC = "en_US.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+Reading package lists...
+Building dependency tree...
+Reading state information...
+iptables-persistent is already the newest version (1.0.15).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+Saving netfilter rules...run-parts: executing /usr/share/netfilter-persistent/plugins.d/15-ip4tables save
+run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables save
+done.
+address=/akadns.net/192.168.192.3
+address=/akam.net/192.168.192.3
+address=/akamai.com/192.168.192.3
+address=/akamai.net/192.168.192.3
+address=/akamaiedge.net/192.168.192.3
+address=/akamaihd.net/192.168.192.3
+address=/akamaistream.net/192.168.192.3
+address=/akamaitech.net/192.168.192.3
+address=/akamaitechnologies.com/192.168.192.3
+address=/akamaitechnologies.fr/192.168.192.3
+address=/akamaized.net/192.168.192.3
+address=/edgekey.net/192.168.192.3
+address=/edgesuite.net/192.168.192.3
+address=/srip.net/192.168.192.3
+address=/footprint.net/192.168.192.3
+address=/level3.net/192.168.192.3
+address=/llnwd.net/192.168.192.3
+address=/edgecastcdn.net/192.168.192.3
+address=/cloudfront.net/192.168.192.3
+address=/netflix.com/192.168.192.3
+address=/netflix.net/192.168.192.3
+address=/nflximg.net/192.168.192.3
+address=/nflxvideo.net/192.168.192.3
+address=/nflxso.net/192.168.192.3
+address=/nflxext.com/192.168.192.3
+address=/hulu.com/192.168.192.3
+address=/huluim.com/192.168.192.3
+address=/hbonow.com/192.168.192.3
+address=/hbogo.com/192.168.192.3
+address=/hbo.com/192.168.192.3
+address=/amazon.com/192.168.192.3
+address=/amazon.co.uk/192.168.192.3
+address=/amazonvideo.com/192.168.192.3
+address=/crackle.com/192.168.192.3
+address=/pandora.com/192.168.192.3
+address=/vudu.com/192.168.192.3
+address=/blinkbox.com/192.168.192.3
+address=/abc.com/192.168.192.3
+address=/fox.com/192.168.192.3
+address=/theplatform.com/192.168.192.3
+address=/nbc.com/192.168.192.3
+address=/nbcuni.com/192.168.192.3
+address=/ip2location.com/192.168.192.3
+address=/pbs.org/192.168.192.3
+address=/warnerbros.com/192.168.192.3
+address=/southpark.cc.com/192.168.192.3
+address=/cbs.com/192.168.192.3
+address=/brightcove.com/192.168.192.3
+address=/cwtv.com/192.168.192.3
+address=/spike.com/192.168.192.3
+address=/go.com/192.168.192.3
+address=/mtv.com/192.168.192.3
+address=/mtvnservices.com/192.168.192.3
+address=/playstation.net/192.168.192.3
+address=/uplynk.com/192.168.192.3
+address=/maxmind.com/192.168.192.3
+address=/disney.com/192.168.192.3
+address=/disneyjunior.com/192.168.192.3
+address=/xboxlive.com/192.168.192.3
+address=/lovefilm.com/192.168.192.3
+address=/turner.com/192.168.192.3
+address=/amctv.com/192.168.192.3
+address=/sho.com/192.168.192.3
+address=/mog.com/192.168.192.3
+address=/wdtvlive.com/192.168.192.3
+address=/beinsportsconnect.tv/192.168.192.3
+address=/beinsportsconnect.net/192.168.192.3
+address=/fig.bbc.co.uk/192.168.192.3
+address=/open.live.bbc.co.uk/192.168.192.3
+address=/sa.bbc.co.uk/192.168.192.3
+address=/www.bbc.co.uk/192.168.192.3
+address=/crunchyroll.com/192.168.192.3
+address=/ifconfig.co/192.168.192.3
+address=/omtrdc.net/192.168.192.3
+address=/sling.com/192.168.192.3
+address=/movetv.com/192.168.192.3
+address=/optus.com.au/192.168.192.3
+address=/optusnet.com.au/192.168.192.3
+address=/hoichoi.tv/192.168.192.3
+address=/viewlift.com/192.168.192.3
+address=/ionicframework.com/192.168.192.3
+address=/cloudfront.net/192.168.192.3
+address=/eu1.clevertap-prod.com/192.168.192.3
+address=/fonts.gstatic.com/192.168.192.3
+address=/akamaihd.net/192.168.192.3
+address=/live-video.net/192.168.192.3
+address=/akamaized.net/192.168.192.3
+address=/cookiebot.com/192.168.192.3
+address=/freshchat.com/192.168.192.3
+address=/freshworksapi.com/192.168.192.3
+address=/fc-use1-00-pics-bkt-00.s3.amazonaws.com/192.168.192.3
+address=/hotstar.com/192.168.192.3
+address=/sentry.io/192.168.192.3
+address=/hotstarext.com/192.168.192.3
+Hit:1 https://download.docker.com/linux/debian bullseye InRelease
+Hit:2 http://download.zerotier.com/debian/bullseye bullseye InRelease
+Hit:3 http://deb.debian.org/debian bullseye InRelease
+Hit:4 http://security.debian.org/debian-security bullseye-security InRelease
+Hit:5 http://deb.debian.org/debian bullseye-updates InRelease
+Hit:6 http://archive.raspberrypi.org/debian bullseye InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.30.2-1+deb11u2).
+python3-venv is already the newest version (3.9.2-3).
+sqlite3 is already the newest version (3.34.1-3).
+python3-pip is already the newest version (20.3.4-4+rpt1+deb11u1).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: pip in ./venv/lib/python3.9/site-packages (23.2.1)
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: docker-compose in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (1.29.2)
+Requirement already satisfied: PyYAML<6,>=3.10 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (5.4.1)
+Requirement already satisfied: distro<2,>=1.5.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (1.8.0)
+Requirement already satisfied: docker[ssh]>=5 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (6.1.3)
+Requirement already satisfied: dockerpty<1,>=0.4.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.4.1)
+Requirement already satisfied: docopt<1,>=0.6.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: jsonschema<4,>=2.5.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: python-dotenv<1,>=0.13.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.21.1)
+Requirement already satisfied: requests<3,>=2.20.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: texttable<2,>=0.9.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (1.6.7)
+Requirement already satisfied: websocket-client<1,>=0.32.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.59.0)
+Requirement already satisfied: packaging>=14.0 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (23.1)
+Requirement already satisfied: urllib3>=1.26.0 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (2.0.4)
+Requirement already satisfied: paramiko>=2.4.3 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (3.3.1)
+Requirement already satisfied: six>=1.3.0 in ./venv/lib/python3.9/site-packages (from dockerpty<1,>=0.4.1->docker-compose->-r requirements.txt (line 1)) (1.16.0)
+Requirement already satisfied: attrs>=17.4.0 in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (23.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (0.19.3)
+Requirement already satisfied: setuptools in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (44.1.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (2023.7.22)
+Requirement already satisfied: bcrypt>=3.2 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (4.0.1)
+Requirement already satisfied: cryptography>=3.3 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (41.0.2)
+Requirement already satisfied: pynacl>=1.5 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.9/site-packages (from cryptography>=3.3->paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (1.15.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.9/site-packages (from cffi>=1.12->cryptography>=3.3->paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (2.21)
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting web.py (from -r /root/netflix-proxy/auth/requirements.txt (line 2))
+  Cloning https://github.com/webpy/webpy to /tmp/pip-install-5jbgfu5u/web-py_1486b7f1388f4003bbf6cb159ff00079
+  Running command git clone --filter=blob:none --quiet https://github.com/webpy/webpy /tmp/pip-install-5jbgfu5u/web-py_1486b7f1388f4003bbf6cb159ff00079
+  Resolved https://github.com/webpy/webpy to commit 1377c9fefd5ddc31937ca31ca33ec1bf494597d0
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: dnspython in ./venv/lib/python3.9/site-packages (from -r /root/netflix-proxy/auth/requirements.txt (line 1)) (2.4.1)
+Requirement already satisfied: passlib in ./venv/lib/python3.9/site-packages (from -r /root/netflix-proxy/auth/requirements.txt (line 3)) (1.7.4)
+Requirement already satisfied: cheroot in ./venv/lib/python3.9/site-packages (from web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (10.0.0)
+Requirement already satisfied: more-itertools>=2.6 in ./venv/lib/python3.9/site-packages (from cheroot->web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (10.0.0)
+Requirement already satisfied: jaraco.functools in ./venv/lib/python3.9/site-packages (from cheroot->web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (3.8.0)
+proxy / localhost:43867 {
+    except /static
+    header_upstream Host {host}
+    header_upstream X-Forwarded-For {remote}
+    header_upstream X-Real-IP {remote}
+    header_upstream X-Forwarded-Proto {scheme}
+}
+The EXTIP variable is not set. Defaulting to a blank string.
+The EXTIP6 variable is not set. Defaulting to a blank string.
+Pulling dnsmasq-service       ... 
+Pulling dnsmasq-bogus-service ... 
+Pulling caddy-service         ... 
+Pulling sniproxy-service      ... 
+Pulling dnsmasq-bogus-service ... pulling from 4km3/dnsmasq
+Pulling dnsmasq-service       ... pulling from 4km3/dnsmasq
+Pulling caddy-service         ... pulling from elswork/arm-caddy
+Pulling dnsmasq-bogus-service ... digest: sha256:37b2edb753e13cbb74...
+Pulling dnsmasq-bogus-service ... status: image is up to date for 4...
+Pulling dnsmasq-bogus-service ... done
+Pulling dnsmasq-service       ... digest: sha256:37b2edb753e13cbb74...
+Pulling dnsmasq-service       ... status: image is up to date for 4...
+Pulling dnsmasq-service       ... done
+Pulling caddy-service         ... digest: sha256:f9047460c4a07a6797...
+Pulling caddy-service         ... status: image is up to date for e...
+Pulling caddy-service         ... done
+Pulling sniproxy-service      ... done
+Some service image(s) must be built from source by running:
+    docker-compose build sniproxy-service
+Creating sniproxy ... 
+Creating dnsmasq-bogus ... 
+Creating dnsmasq       ... 
+Creating caddy         ... 
+Creating dnsmasq       ... done
+Creating caddy         ... done
+Creating dnsmasq-bogus ... done
+Creating sniproxy      ... done
+Loading netfilter rules...run-parts: executing /usr/share/netfilter-persistent/plugins.d/15-ip4tables start
+run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables start
+done.
+
+; <<>> DiG 9.16.42-Debian <<>> -4 +time www.netflix.com @192.168.192.3
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52248
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;www.netflix.com.		IN	A
+
+;; ANSWER SECTION:
+www.netflix.com.	60	IN	A	192.168.192.3
+
+;; Query time: 7 msec
+;; SERVER: 192.168.192.3#53(192.168.192.3)
+;; WHEN: Fri Aug 25 15:53:07 IST 2023
+;; MSG SIZE  rcvd: 60
+
+* Added www.netflix.com:443:192.168.192.3 to DNS cache
+* Hostname www.netflix.com was found in DNS cache
+*   Trying 192.168.192.3:443...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to www.netflix.com (192.168.192.3) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [3292 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Los Gatos; O=Netflix, Inc.; CN=www.netflix.com
+*  start date: Dec 14 00:00:00 2022 GMT
+*  expire date: Jan 14 23:59:59 2024 GMT
+*  subjectAltName: host "www.netflix.com" matched cert's "www.netflix.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x55af42a510)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: www.netflix.com
+> user-agent: curl/7.74.0
+> accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [214 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [214 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+} [5 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0< HTTP/2 302 
+< server: nq_website_nonmember-prod-release 9312bd4a-2ce8-4708-b3f3-c9adbf6635c0
+< x-frame-options: DENY
+< content-type: text/html
+< cache-control: no-cache, no-store
+< pragma: no-cache
+< expires: 0
+< x-robots-tag: index
+< location: https://www.netflix.com/in/
+< date: Fri, 25 Aug 2023 10:23:08 GMT
+< x-envoy-upstream-service-time: 270
+< x-b3-traceid: f23dce8d612cb4e0
+< x-request-id: fd8cda96-70ac-494f-9477-7a4d2260507d
+< x-envoy-decorator-operation: lo_svc
+< via: 2 i-0911f7eb387c1a759 (eu-west-1)
+< x-xss-protection: 1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=31536000; includeSubDomains
+< x-originating-url: http://www.netflix.com/
+< edge-control: no-cache, no-store
+< set-cookie: flwssn=ee9ee1ab-f17c-460e-8183-14437533414a; Max-Age=10800; Domain=.netflix.com; Path=/
+< set-cookie: nfvdid=BQFmAAEBEJTmxat2pwjJHaAsFN8eCPVAS1u8CgAjatPZFie93L4O49es4neCZByOen3Mdy98ZuQMOZJaosbVwdkNl6yRGkl-cABdgbmhA17t0NN_u9JhOw%3D%3D; Domain=.netflix.com; Path=/; Max-Age=31536000
+< set-cookie: SecureNetflixId=v%3D2%26mac%3DAQEAEQABABQQrt05cpoQ_2n6UCKhVaBN4p7zfvBFcJY.%26dt%3D1692958988005; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:23:08 GMT; Path=/; HttpOnly; Secure; SameSite=Strict
+< set-cookie: NetflixId=v%3D2%26ct%3DBQAOAAEBENJaTOogxgJuBfO5fg9mjCiBAIS-yY2HyXIvFdjgB_n2MvlT2N__0PuuJN3KCqVArVD8h0s9mtpQYWG4GsNvii0hXMotk4zNx3-P7i4C0tRdgJB6EHOg2HPqNa3pOKY7KZssOs9Uf6BwPtPsY-deftXqIEkMBLpXvPLSrfVJyn23A-Kus4PHA0sH4hd0RfYIMmTEej_5wfDoYPcgRFckF1uD7td64EDsulC-mQKCS74nnBzWcOLdqfwYTz6xZqnCBTgR9dkNqLdvmPiSCK4sktl4MCcbiIr10zFgnoyauX-LL0rsn7upPPVeUcBaveG7uHexhLNCVWt_Y-7wkiiSL9cRnyeQL60VXPnphA5-Owq7o_I.%26bt%3Ddev%26mac%3DAQEAEAABABTt63y9_aI5GxG8bCZoD-3KGBTQTAuDXo8.; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:23:08 GMT; Path=/; HttpOnly; Secure; SameSite=Lax
+< x-netflix.nfstatus: 1_1
+< x-netflix.proxy.execution-time: 289
+< 
+{ [0 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host www.netflix.com left intact
+* Issue another request to this URL: 'https://www.netflix.com/in/'
+* Found bundle for host www.netflix.com: 0x55af422610 [can multiplex]
+* Re-using existing connection! (#0) with host www.netflix.com
+* Connected to www.netflix.com (192.168.192.3) port 443 (#0)
+* Using Stream ID: 3 (easy handle 0x55af42a510)
+} [5 bytes data]
+> GET /in/ HTTP/2
+> Host: www.netflix.com
+> user-agent: curl/7.74.0
+> accept: */*
+> 
+{ [5 bytes data]
+< HTTP/2 200 
+< server: nq_website_nonmember-prod-release c3b94621-f99d-4622-a0c4-68561346aea8
+< x-frame-options: DENY
+< content-type: text/html; charset=utf-8
+< cache-control: no-cache, no-store, must-revalidate
+< pragma: no-cache
+< expires: 0
+< x-robots-tag: index
+< date: Fri, 25 Aug 2023 10:23:08 GMT
+< x-envoy-upstream-service-time: 178
+< x-b3-traceid: 506fded0de8d69a0
+< x-request-id: 5a8e1808-76b6-4965-89e8-690a54f19a62
+< x-envoy-decorator-operation: lo_svc
+< via: 2 i-0911f7eb387c1a759 (eu-west-1)
+< x-xss-protection: 1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=31536000; includeSubDomains
+< x-originating-url: http://www.netflix.com/in/
+< set-cookie: flwssn=2b606045-8d56-4385-9923-9228a1a2bfed; Max-Age=10800; Domain=.netflix.com; Path=/
+< set-cookie: nfvdid=BQFmAAEBEAvCP2Wd1qe5scFo-CAEsNdAG74kSXwSW5M-fGaP-WnHJnwGb1xfv28zAHWYv01TKXNXguxqA2Y6dyvvGTO6PuXyvKIApIlpsobK5M37B7IDXQ%3D%3D; Domain=.netflix.com; Path=/; Max-Age=31536000
+< set-cookie: SecureNetflixId=v%3D2%26mac%3DAQEAEQABABRPXRKDyLxfVaaatOzor2xMOrTaCUvKDPI.%26dt%3D1692958988348; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:23:08 GMT; Path=/; HttpOnly; Secure; SameSite=Strict
+< set-cookie: NetflixId=v%3D2%26ct%3DBQAOAAEBEPkHaGWJM2DgxiI1_DTeq5uBAIb4MwBtj_NRpr4X8WHDmQx2AcyadRYPq8l_boeBDtoMorVnnlj6K1IIqpA5Z4xoUO16IuS4bquKuOMsw3bzcBNnWe3_eyqhWPo6kgRNtHyL2WdbkDSPUxVVStAHHzwTXgzSiP-pAlZktUN9cxI22dgdZHhj9Vm26jHhmPEmAF7ue0w_cAWdspo70wrN8XSC6dFkJrdKFAOPIeTU_wZrw3bkp4bO-F59crhqoaxosrqlzFRnn_CBxeiqfyre_BvAqHX43u1XRtFy0kUl22BUCBiZHdWcpeDafpoKjo7mwsaO1lZazcJUFwEFWGQN_GaHSAlOknSKwHUawTNwViw_1LY.%26bt%3Ddev%26mac%3DAQEAEAABABSwdVS6ewbPVkzim5dfrGwvv49uHO69U-w.; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:23:08 GMT; Path=/; HttpOnly; Secure; SameSite=Lax
+< x-netflix.nfstatus: 1_1
+< x-netflix.proxy.execution-time: 184
+< 
+{ [15203 bytes data]
+100 98303    0 98303    0     0  58934      0 --:--:--  0:00:01 --:--:-- 58934100  416k    0  416k    0     0   206k      0 --:--:--  0:00:02 --:--:--  921k
+* Connection #0 to host www.netflix.com left intact
+~/netflix-proxy
+Hit:1 https://download.docker.com/linux/debian bullseye InRelease
+Hit:2 http://archive.raspberrypi.org/debian bullseye InRelease
+Hit:3 http://download.zerotier.com/debian/bullseye bullseye InRelease
+Hit:4 http://security.debian.org/debian-security bullseye-security InRelease
+Hit:5 http://deb.debian.org/debian bullseye InRelease
+Hit:6 http://deb.debian.org/debian bullseye-updates InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+net-tools is already the newest version (1.60+git20181103.0eebece-1).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+./netflixbuild.sh: build=0 client=192.168.137.0/24 is_client_ipv4=1 ipaddr=192.168.1.193 extip=192.168.192.3
+
+~/netflix-proxy ~/netflix-proxy
+
+resolver {
+  nameserver 8.8.8.8
+  nameserver 8.8.4.4
+  mode ipv4_only
+}
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_US.UTF-8",
+	LC_MONETARY = "en_US.UTF-8",
+	LC_MESSAGES = "en_US.UTF-8",
+	LC_COLLATE = "en_US.UTF-8",
+	LC_NUMERIC = "en_US.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_US.UTF-8",
+	LC_MONETARY = "en_US.UTF-8",
+	LC_MESSAGES = "en_US.UTF-8",
+	LC_COLLATE = "en_US.UTF-8",
+	LC_NUMERIC = "en_US.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+Reading package lists...
+Building dependency tree...
+Reading state information...
+iptables-persistent is already the newest version (1.0.15).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+Saving netfilter rules...run-parts: executing /usr/share/netfilter-persistent/plugins.d/15-ip4tables save
+run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables save
+done.
+address=/akadns.net/192.168.192.3
+address=/akam.net/192.168.192.3
+address=/akamai.com/192.168.192.3
+address=/akamai.net/192.168.192.3
+address=/akamaiedge.net/192.168.192.3
+address=/akamaihd.net/192.168.192.3
+address=/akamaistream.net/192.168.192.3
+address=/akamaitech.net/192.168.192.3
+address=/akamaitechnologies.com/192.168.192.3
+address=/akamaitechnologies.fr/192.168.192.3
+address=/akamaized.net/192.168.192.3
+address=/edgekey.net/192.168.192.3
+address=/edgesuite.net/192.168.192.3
+address=/srip.net/192.168.192.3
+address=/footprint.net/192.168.192.3
+address=/level3.net/192.168.192.3
+address=/llnwd.net/192.168.192.3
+address=/edgecastcdn.net/192.168.192.3
+address=/cloudfront.net/192.168.192.3
+address=/netflix.com/192.168.192.3
+address=/netflix.net/192.168.192.3
+address=/nflximg.net/192.168.192.3
+address=/nflxvideo.net/192.168.192.3
+address=/nflxso.net/192.168.192.3
+address=/nflxext.com/192.168.192.3
+address=/hulu.com/192.168.192.3
+address=/huluim.com/192.168.192.3
+address=/hbonow.com/192.168.192.3
+address=/hbogo.com/192.168.192.3
+address=/hbo.com/192.168.192.3
+address=/amazon.com/192.168.192.3
+address=/amazon.co.uk/192.168.192.3
+address=/amazonvideo.com/192.168.192.3
+address=/crackle.com/192.168.192.3
+address=/pandora.com/192.168.192.3
+address=/vudu.com/192.168.192.3
+address=/blinkbox.com/192.168.192.3
+address=/abc.com/192.168.192.3
+address=/fox.com/192.168.192.3
+address=/theplatform.com/192.168.192.3
+address=/nbc.com/192.168.192.3
+address=/nbcuni.com/192.168.192.3
+address=/ip2location.com/192.168.192.3
+address=/pbs.org/192.168.192.3
+address=/warnerbros.com/192.168.192.3
+address=/southpark.cc.com/192.168.192.3
+address=/cbs.com/192.168.192.3
+address=/brightcove.com/192.168.192.3
+address=/cwtv.com/192.168.192.3
+address=/spike.com/192.168.192.3
+address=/go.com/192.168.192.3
+address=/mtv.com/192.168.192.3
+address=/mtvnservices.com/192.168.192.3
+address=/playstation.net/192.168.192.3
+address=/uplynk.com/192.168.192.3
+address=/maxmind.com/192.168.192.3
+address=/disney.com/192.168.192.3
+address=/disneyjunior.com/192.168.192.3
+address=/xboxlive.com/192.168.192.3
+address=/lovefilm.com/192.168.192.3
+address=/turner.com/192.168.192.3
+address=/amctv.com/192.168.192.3
+address=/sho.com/192.168.192.3
+address=/mog.com/192.168.192.3
+address=/wdtvlive.com/192.168.192.3
+address=/beinsportsconnect.tv/192.168.192.3
+address=/beinsportsconnect.net/192.168.192.3
+address=/fig.bbc.co.uk/192.168.192.3
+address=/open.live.bbc.co.uk/192.168.192.3
+address=/sa.bbc.co.uk/192.168.192.3
+address=/www.bbc.co.uk/192.168.192.3
+address=/crunchyroll.com/192.168.192.3
+address=/ifconfig.co/192.168.192.3
+address=/omtrdc.net/192.168.192.3
+address=/sling.com/192.168.192.3
+address=/movetv.com/192.168.192.3
+address=/optus.com.au/192.168.192.3
+address=/optusnet.com.au/192.168.192.3
+address=/hoichoi.tv/192.168.192.3
+address=/viewlift.com/192.168.192.3
+address=/ionicframework.com/192.168.192.3
+address=/cloudfront.net/192.168.192.3
+address=/eu1.clevertap-prod.com/192.168.192.3
+address=/fonts.gstatic.com/192.168.192.3
+address=/akamaihd.net/192.168.192.3
+address=/live-video.net/192.168.192.3
+address=/akamaized.net/192.168.192.3
+address=/cookiebot.com/192.168.192.3
+address=/freshchat.com/192.168.192.3
+address=/freshworksapi.com/192.168.192.3
+address=/fc-use1-00-pics-bkt-00.s3.amazonaws.com/192.168.192.3
+address=/hotstar.com/192.168.192.3
+address=/sentry.io/192.168.192.3
+address=/hotstarext.com/192.168.192.3
+address=/appsflyer.com/192.168.192.3
+address=/cloudfront.net/192.168.192.3
+address=/conviva.com/192.168.192.3
+address=/google.com/192.168.192.3
+address=/googleapis.com/192.168.192.3
+address=/googlesyndication.com/192.168.192.3
+address=/gstatic.com/192.168.192.3
+address=/juspay.in/192.168.192.3
+address=/mixpanel.com/192.168.192.3
+address=/newrelic.com/192.168.192.3
+address=/nr-data.net/192.168.192.3
+address=/onelink.me/192.168.192.3
+address=/wzrkt.com/192.168.192.3
+address=/zee5.com/192.168.192.3
+Hit:1 https://download.docker.com/linux/debian bullseye InRelease
+Hit:2 http://security.debian.org/debian-security bullseye-security InRelease
+Hit:3 http://download.zerotier.com/debian/bullseye bullseye InRelease
+Hit:4 http://deb.debian.org/debian bullseye InRelease
+Hit:5 http://deb.debian.org/debian bullseye-updates InRelease
+Hit:6 http://archive.raspberrypi.org/debian bullseye InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.30.2-1+deb11u2).
+python3-venv is already the newest version (3.9.2-3).
+sqlite3 is already the newest version (3.34.1-3).
+python3-pip is already the newest version (20.3.4-4+rpt1+deb11u1).
+0 upgraded, 0 newly installed, 0 to remove and 29 not upgraded.
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: pip in ./venv/lib/python3.9/site-packages (23.2.1)
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: docker-compose in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (1.29.2)
+Requirement already satisfied: PyYAML<6,>=3.10 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (5.4.1)
+Requirement already satisfied: distro<2,>=1.5.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (1.8.0)
+Requirement already satisfied: docker[ssh]>=5 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (6.1.3)
+Requirement already satisfied: dockerpty<1,>=0.4.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.4.1)
+Requirement already satisfied: docopt<1,>=0.6.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: jsonschema<4,>=2.5.1 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: python-dotenv<1,>=0.13.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.21.1)
+Requirement already satisfied: requests<3,>=2.20.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: texttable<2,>=0.9.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (1.6.7)
+Requirement already satisfied: websocket-client<1,>=0.32.0 in ./venv/lib/python3.9/site-packages (from docker-compose->-r requirements.txt (line 1)) (0.59.0)
+Requirement already satisfied: packaging>=14.0 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (23.1)
+Requirement already satisfied: urllib3>=1.26.0 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (2.0.4)
+Requirement already satisfied: paramiko>=2.4.3 in ./venv/lib/python3.9/site-packages (from docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (3.3.1)
+Requirement already satisfied: six>=1.3.0 in ./venv/lib/python3.9/site-packages (from dockerpty<1,>=0.4.1->docker-compose->-r requirements.txt (line 1)) (1.16.0)
+Requirement already satisfied: attrs>=17.4.0 in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (23.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (0.19.3)
+Requirement already satisfied: setuptools in ./venv/lib/python3.9/site-packages (from jsonschema<4,>=2.5.1->docker-compose->-r requirements.txt (line 1)) (44.1.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.9/site-packages (from requests<3,>=2.20.0->docker-compose->-r requirements.txt (line 1)) (2023.7.22)
+Requirement already satisfied: bcrypt>=3.2 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (4.0.1)
+Requirement already satisfied: cryptography>=3.3 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (41.0.2)
+Requirement already satisfied: pynacl>=1.5 in ./venv/lib/python3.9/site-packages (from paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.9/site-packages (from cryptography>=3.3->paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (1.15.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.9/site-packages (from cffi>=1.12->cryptography>=3.3->paramiko>=2.4.3->docker[ssh]>=5->docker-compose->-r requirements.txt (line 1)) (2.21)
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting web.py (from -r /root/netflix-proxy/auth/requirements.txt (line 2))
+  Cloning https://github.com/webpy/webpy to /tmp/pip-install-0ghw7sz1/web-py_c571b52702004ae4af46789e5e5dfe0e
+  Running command git clone --filter=blob:none --quiet https://github.com/webpy/webpy /tmp/pip-install-0ghw7sz1/web-py_c571b52702004ae4af46789e5e5dfe0e
+  Resolved https://github.com/webpy/webpy to commit 1377c9fefd5ddc31937ca31ca33ec1bf494597d0
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: dnspython in ./venv/lib/python3.9/site-packages (from -r /root/netflix-proxy/auth/requirements.txt (line 1)) (2.4.1)
+Requirement already satisfied: passlib in ./venv/lib/python3.9/site-packages (from -r /root/netflix-proxy/auth/requirements.txt (line 3)) (1.7.4)
+Requirement already satisfied: cheroot in ./venv/lib/python3.9/site-packages (from web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (10.0.0)
+Requirement already satisfied: more-itertools>=2.6 in ./venv/lib/python3.9/site-packages (from cheroot->web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (10.0.0)
+Requirement already satisfied: jaraco.functools in ./venv/lib/python3.9/site-packages (from cheroot->web.py->-r /root/netflix-proxy/auth/requirements.txt (line 2)) (3.8.0)
+proxy / localhost:43867 {
+    except /static
+    header_upstream Host {host}
+    header_upstream X-Forwarded-For {remote}
+    header_upstream X-Real-IP {remote}
+    header_upstream X-Forwarded-Proto {scheme}
+}
+The EXTIP variable is not set. Defaulting to a blank string.
+The EXTIP6 variable is not set. Defaulting to a blank string.
+Pulling dnsmasq-service       ... 
+Pulling dnsmasq-bogus-service ... 
+Pulling caddy-service         ... 
+Pulling sniproxy-service      ... 
+Pulling sniproxy-service      ... done
+Pulling caddy-service         ... pulling from elswork/arm-caddy
+Pulling dnsmasq-service       ... pulling from 4km3/dnsmasq
+Pulling dnsmasq-bogus-service ... pulling from 4km3/dnsmasq
+Pulling caddy-service         ... digest: sha256:f9047460c4a07a6797...
+Pulling caddy-service         ... status: image is up to date for e...
+Pulling dnsmasq-service       ... digest: sha256:37b2edb753e13cbb74...
+Pulling dnsmasq-service       ... status: image is up to date for 4...
+Pulling caddy-service         ... done
+Pulling dnsmasq-service       ... done
+Pulling dnsmasq-bogus-service ... digest: sha256:37b2edb753e13cbb74...
+Pulling dnsmasq-bogus-service ... status: image is up to date for 4...
+Pulling dnsmasq-bogus-service ... done
+Some service image(s) must be built from source by running:
+    docker-compose build sniproxy-service
+Creating dnsmasq-bogus ... 
+Creating dnsmasq       ... 
+Creating sniproxy      ... 
+Creating caddy         ... 
+Creating dnsmasq-bogus ... done
+Creating sniproxy      ... done
+Creating dnsmasq       ... done
+Creating caddy         ... done
+Loading netfilter rules...run-parts: executing /usr/share/netfilter-persistent/plugins.d/15-ip4tables start
+run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables start
+done.
+
+; <<>> DiG 9.16.42-Debian <<>> -4 +time www.netflix.com @192.168.192.3
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36755
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;www.netflix.com.		IN	A
+
+;; ANSWER SECTION:
+www.netflix.com.	60	IN	A	192.168.192.3
+
+;; Query time: 3 msec
+;; SERVER: 192.168.192.3#53(192.168.192.3)
+;; WHEN: Fri Aug 25 16:06:27 IST 2023
+;; MSG SIZE  rcvd: 60
+
+* Added www.netflix.com:443:192.168.192.3 to DNS cache
+* Hostname www.netflix.com was found in DNS cache
+*   Trying 192.168.192.3:443...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to www.netflix.com (192.168.192.3) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [3292 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Los Gatos; O=Netflix, Inc.; CN=www.netflix.com
+*  start date: Dec 14 00:00:00 2022 GMT
+*  expire date: Jan 14 23:59:59 2024 GMT
+*  subjectAltName: host "www.netflix.com" matched cert's "www.netflix.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x559b0aa510)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: www.netflix.com
+> user-agent: curl/7.74.0
+> accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [214 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [214 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+} [5 bytes data]
+< HTTP/2 302 
+< server: nq_website_nonmember-prod-release ed7fed59-2a79-4cb2-909e-1c0967915d72
+< x-frame-options: DENY
+< content-type: text/html
+< cache-control: no-cache, no-store
+< pragma: no-cache
+< expires: 0
+< x-robots-tag: index
+< location: https://www.netflix.com/in/
+< date: Fri, 25 Aug 2023 10:36:27 GMT
+< x-envoy-upstream-service-time: 119
+< x-b3-traceid: 0f46f7f10657886c
+< x-request-id: 96ba1cb9-3161-4f3a-a888-9a3e0566e79c
+< x-envoy-decorator-operation: lo_svc
+< via: 2 i-0378ea7053c321952 (eu-west-1)
+< x-xss-protection: 1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=31536000; includeSubDomains
+< x-originating-url: http://www.netflix.com/
+< edge-control: no-cache, no-store
+< set-cookie: flwssn=a4b9d7e5-4ac3-4077-ae3c-fe61bf2d7ec6; Max-Age=10800; Domain=.netflix.com; Path=/
+< set-cookie: nfvdid=BQFmAAEBEP1amnbv_AckJsb3XgSEF2BA8-NhUC5IjxckhnFDeEU5ix49ZLReYC0MjEtEJdSbVM431hqKxDX618rk-CNJ1AMVTAkGRp8d_lt_DbQZccKE-w%3D%3D; Domain=.netflix.com; Path=/; Max-Age=31536000
+< set-cookie: SecureNetflixId=v%3D2%26mac%3DAQEAEQABABTuX-upGaEZVrv96d0WiFY36A5MyYOBiGk.%26dt%3D1692959787822; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:36:27 GMT; Path=/; HttpOnly; Secure; SameSite=Strict
+< set-cookie: NetflixId=v%3D2%26ct%3DBQAOAAEBEJMfsv_WrqkZIYBb3OyO-qGBAJF8sC1isBJX1qpylmXp7Me0WPfuC01rJw5krkWWcN0Pb8XW0pK3ZuFS848Pl-pQOUF6kuJw4XkRKl1aTFY2tT5IVnF14jahKECXS9xldf0Cq17zoTZ5VELPDtm4DmEkgPIUdCVJw1rjdPszm1xl-WaTwi4L_hqllFmcVpFABIgyx0DUaaypnUlwBQG6gIdr-s4qxGDw55pyEESNlAuknVQHKQ9rtYl1pfU8jomI-XsV54D1gJWyBqNdFlsiCX5HsLbMsa0-uVAxqOwNlII-Z2Q4t4bzUyTrFDY3Nx9JiCxqGYk9nVlo1NeAS-P8SIMbWgSuKYXJ8wu6LQOV_TobDmM.%26bt%3Ddev%26mac%3DAQEAEAABABRWkjgcj3LUkJ-PsuSILbjfFwxko_FYIIA.; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:36:27 GMT; Path=/; HttpOnly; Secure; SameSite=Lax
+< x-netflix.nfstatus: 1_1
+< x-netflix.proxy.execution-time: 126
+< 
+{ [0 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host www.netflix.com left intact
+* Issue another request to this URL: 'https://www.netflix.com/in/'
+* Found bundle for host www.netflix.com: 0x559b0a2610 [can multiplex]
+* Re-using existing connection! (#0) with host www.netflix.com
+* Connected to www.netflix.com (192.168.192.3) port 443 (#0)
+* Using Stream ID: 3 (easy handle 0x559b0aa510)
+} [5 bytes data]
+> GET /in/ HTTP/2
+> Host: www.netflix.com
+> user-agent: curl/7.74.0
+> accept: */*
+> 
+{ [5 bytes data]
+< HTTP/2 200 
+< server: nq_website_nonmember-prod-release 4619b4e7-52fa-4deb-bbc3-9c83ac0ae85d
+< x-frame-options: DENY
+< content-type: text/html; charset=utf-8
+< cache-control: no-cache, no-store, must-revalidate
+< pragma: no-cache
+< expires: 0
+< x-robots-tag: index
+< date: Fri, 25 Aug 2023 10:36:28 GMT
+< x-envoy-upstream-service-time: 145
+< x-b3-traceid: 11fa225cb54e3fd5
+< x-request-id: 19052491-e832-43a2-a998-0fcbdc7b8eb7
+< x-envoy-decorator-operation: lo_svc
+< via: 2 i-0378ea7053c321952 (eu-west-1)
+< x-xss-protection: 1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=31536000; includeSubDomains
+< x-originating-url: http://www.netflix.com/in/
+< set-cookie: flwssn=e6fbdfe6-1a1b-4731-afa6-8928763ba83d; Max-Age=10800; Domain=.netflix.com; Path=/
+< set-cookie: nfvdid=BQFmAAEBEDEWYfabTvaY3pcPcGun215Ai3NMoTyZYgtDfI6Lmk3N-yREP1SgMpxZu6XzwLSWXRgilBL4JNN8IJv5DX98drqFXrIcedstSV2BfXvMN4CMVg%3D%3D; Domain=.netflix.com; Path=/; Max-Age=31536000
+< set-cookie: SecureNetflixId=v%3D2%26mac%3DAQEAEQABABSN5T0nS3lh2XAIliR54aeYezhTlIhHB18.%26dt%3D1692959788136; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:36:28 GMT; Path=/; HttpOnly; Secure; SameSite=Strict
+< set-cookie: NetflixId=v%3D2%26ct%3DBQAOAAEBELCEyWZjC2wMROxxTQcYQAiBAM0goNB4Dc0TH8UrjrlgkeqHmpyTjfnFWoI2mHGXzfyf_KQIo4h_G2bsGN6U3WddPNZvq2tzJESUHR0q863DW75oMeRPtYwv8PPRely7PlqwNnT-s7CqIZwyJyGtEONYzhc9xowSMf-7-sTSQroJwakJomA9kF_Ja4b2J7fqV8pStBgiTfUdm2UccpGWgZR8sXMSqPhpgM9mmzgfW5ipbakdDOljl6pgEq1L3zUTLuZP_axTxF8-dQS-fawsfo80zPimo1NSWrWz2JRvFDHSL2UO90p43BpjGutptyz1zhIAJn8ihExVcPWq7jboxbJEk8Y3yA1cC5MBcYGOcXqFkd0.%26bt%3Ddev%26mac%3DAQEAEAABABTRlBOTuCNF-RzSOefmYAdZKBXNZIdjH1Q.; Domain=.netflix.com; Expires=Sat, 24 Aug 2024 10:36:28 GMT; Path=/; HttpOnly; Secure; SameSite=Lax
+< x-netflix.nfstatus: 1_1
+< x-netflix.proxy.execution-time: 150
+< 
+{ [15171 bytes data]
+100  303k    0  303k    0     0   183k      0 --:--:--  0:00:01 --:--:--  183k100  416k    0  416k    0     0   238k      0 --:--:--  0:00:01 --:--:-- 1205k
+* Connection #0 to host www.netflix.com left intact
+~/netflix-proxy
