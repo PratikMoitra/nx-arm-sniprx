@@ -34,6 +34,10 @@ The following are supported out of the box, however adding additional services i
 * BBC iPlayer[[n5]](#footnotes)
 * NBC Sports and potentially many [more](https://github.com/ab77/netflix-proxy/blob/master/proxy-domains.txt)
 
+# adding additional domains : harupdate.py
+
+To customise your dnsmasq.conf file with additional custom domans retrieved from.har files, use harupdate.py with the -e argument. These files include URL definitions in Json format. It is possible to change any domain to your needed external public IP address using this harupdate.py programme (note that no autometic Public IP detection is available). It also adds these unique domains to the proxy-domains.txt file for future container builds.
+
 # license
 This project is **free**, covered by the [MIT License](https://github.com/ab77/netflix-proxy/blob/master/LICENSE.md). It is provided without any warranty and can be used for any purpose, including private and commercial. However, if you are planning to use it for commercial purposes (i.e make money off it), please do not expect free support, as it would be unfair. A commercial support model can always be negotiated, if required. Please [contact](https://www.upwork.com/freelancers/~016da2a2dc195af5ec) me if this is something that interests you.
 
@@ -380,13 +384,6 @@ This solution uses IPv6 downstream from the proxy to unblock IPv6 enabled provid
 ### contributing
 If you have any idea, feel free to fork it and submit your changes back to me.
 
-### donate
-If you find this useful, please feel free to make a small donation with [PayPal](https://www.paypal.me/belodetech) or Bitcoin.
-
-| Paypal | Bitcoin |
-| ------ | ------- |
-|[![](https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5UUCDR8YXWERQ)|![1GUrKgkaCkdsrCzb4pq3bJwkmjTVv9X7eG](https://raw.githubusercontent.com/ab77/netflix-proxy/master/static/bitcoin_qr.png)1GUrKgkaCkdsrCzb4pq3bJwkmjTVv9X7eG|
-
 #### footnotes
 1. [SNIProxy](https://github.com/dlundquist/sniproxy) by Dustin Lundquist `dustin@null-ptr.net`; this solution will only on devices supporting Server Name Indication (SNI)[[n7]](#footnotes) and only if they use DNS to resolve names.
 2. `Hulu` is heavily geo-restricted from most non-residential IP ranges and doesn't support IPv6.
@@ -405,9 +402,7 @@ If you find this useful, please feel free to make a small donation with [PayPal]
 15. See, [article](https://openvz.org/Docker_inside_CT).
 16. Netflix have most definitely blocked this service provider network ranges, so following the process is unlikely to yield an unblocking solution. If you own a compatible device, you could try `black.box` [unzoner](http://unzoner.com).
 17. GFW is probably re-writing DNS responses for certain very sensitive domains (i.e. facebook.com), so unfortunately a simple proxy solution like this won't work. VPN technology is required to bypass, try `black.box` [unzoner](http://unzoner.com).
-18. [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) by `simon@thekelleys.org.uk`.
-19. Python3 (latest) release won't work on Ubuntu16/Debian9, upgrade to a more recent distribution (Python2 EOL Jan/2020).
+18. Python3 (latest) release won't work on Ubuntu16/Debian9, upgrade to a more recent distribution (Python2 EOL Jan/2020).
 
 <hr>
 <p align="center">&copy; 2016-2019 <a href="http://ab77.github.io/">ab1</a></p>
-<p align="center"><a href="http://anton.belodedenko.me/"><img src="https://avatars2.githubusercontent.com/u/2033996?v=3&s=50"></a></p>
