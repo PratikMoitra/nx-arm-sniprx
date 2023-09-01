@@ -231,3 +231,5 @@ logs.juspay.in
 zee5vod.akamaized.net
 stcf2.zee5.com
 user.zee5.com
+subtitles-a.erosnow.com
+content.uplynk.com
