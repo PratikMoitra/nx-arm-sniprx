@@ -235,3 +235,4 @@ subtitles-a.erosnow.com
 content.uplynk.com
 prod-sports-hin.jiocinema.com
 engage.jiocinema.com
+prod-sports-eng.jiocinema.com
