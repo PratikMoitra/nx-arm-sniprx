@@ -233,3 +233,5 @@ stcf2.zee5.com
 user.zee5.com
 subtitles-a.erosnow.com
 content.uplynk.com
+prod-sports-hin.jiocinema.com
+engage.jiocinema.com
